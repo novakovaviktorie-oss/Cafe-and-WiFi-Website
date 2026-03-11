@@ -1,8 +1,0 @@
-To freeze the versions of my libraries
-In the Terminal put:
-.\venv\Scripts\activate
-and then
-pip freeze > requirements.txt
-What it does:
-
-Lists all installed packages with exact versions:
