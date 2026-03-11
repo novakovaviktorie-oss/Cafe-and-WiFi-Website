@@ -1,0 +1,30 @@
+# === Core Python libraries ===
+numpy
+pandas
+
+# === SQL & Databases ===
+sqlalchemy
+psycopg2-binary
+mysql-connector-python
+# sqlite3 is built-in, no need to install
+
+# === Jupyter / Notebooks ===
+jupyter
+notebook
+
+# === Visualization ===
+matplotlib
+seaborn
+plotly
+
+# === Optional / Machine Learning & Data Science ===
+scikit-learn
+
+# === Web / APIs / Scraping ===
+requests
+beautifulsoup4
+lxml
+
+# === Utilities / Misc ===
+python-dotenv
+tqdm

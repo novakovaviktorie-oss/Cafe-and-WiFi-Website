@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+{% block title %}Add Cafe{% endblock %}
+{% block content %}
+<div class="container mt-5">
+    <h1>Add a Cafe</h1>
+    <form method="POST">
+        {{ form.hidden_tag() }}
+        {% for field in form if field.widget.input_type != 'hidden' and field.name != 'submit' %}
+    <div class="mb-3">
+        {{ field.label(class="form-label") }}
+        {% if field.type == 'BooleanField' %}
+            {{ field(class="form-check-input") }}
+        {% else %}
+            {{ field(class="form-control") }}
+        {% endif %}
+</div>
+        {% endfor %}
+        {{ form.submit(class="btn btn-success") }}
+    </form>
+</div>
+    {% endblock %}
